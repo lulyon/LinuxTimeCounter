@@ -10,6 +10,7 @@ public:
 	~TimeCounter();
 	void reset();
 	double getTimeCount();
+	void printTimeCount();
 };
 
 #endif //TIME_COUNTER_H_

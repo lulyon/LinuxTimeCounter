@@ -13,10 +13,10 @@
 int main() {
 	TimeCounter timer;
 	for(int i = 0; i < 100000000; ++i);
-	printf("It takes %lf seconds since last time record\n", timer.getTimeCount());
+	timer.printTimeCount();
 
 	for(int i = 0; i < 100000000; ++i);
-	printf("It takes %lf seconds since last time record\n", timer.getTimeCount());
+	timer.printTimeCount();
 
 	return 0;
 }

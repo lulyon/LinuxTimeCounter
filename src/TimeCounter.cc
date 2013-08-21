@@ -8,6 +8,7 @@
 #include "TimeCounter.h"
 
 #include <sys/time.h>
+#include <stdio.h>
 
 TimeCounter::TimeCounter(): cur_time_(0)
 {
@@ -37,4 +38,9 @@ double TimeCounter::getTimeCount()
 	cur_time_ = cur_time;
 
 	return sec;
+}
+
+void TimeCounter::printTimeCount()
+{
+	printf("It takes %lf seconds since last time record\n", getTimeCount());
 }
