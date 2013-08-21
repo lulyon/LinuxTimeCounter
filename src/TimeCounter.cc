@@ -33,6 +33,7 @@ double TimeCounter::getTimeCount()
 
 	long cur_time = 1000000 * time.tv_sec + time.tv_usec;
 	double sec = (cur_time - cur_time_) / 1000000.0;
+	if(sec < 0) sec += 86400;
 	cur_time_ = cur_time;
 
 	return sec;
